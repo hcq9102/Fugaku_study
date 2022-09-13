@@ -1,0 +1,23 @@
+Topics:
+
+      Parallel Finite-elemnet method
+      _FEM
+      _Message Passing Interface(MPI)
+      _Par FEM using MPI and openMPI
+      _Parallel numerical algorithms for Iterative Linear Solvers
+      _Parallel Numerical Lib
+      
+      
+      1. lectures for par FEM will be focuse on design of data structure for distributed local mesh files, which is key issue for efficient parallel FEM.
+      
+      2. 
+        1）scalability ： 在高性能计算（或并行计算）中，scalability是用来衡量当计算资源增加时，我们的硬件和软件利用计算资源的能力。
+        2）speedup ： speedup = t1/tn; t1是只有一个处理器时的计算时间，tN 是由N个处理器时的计算时间。
+        3) strong scaling（Amdahl’s law，阿姆达尔定律）: speedup=1 / ( s + p / N ) , 其中s是可以不能并行计算的部分所用时间的比例，p是可以并行部分所用时间的比例，N是处理器个数。
+            该定律描述的是在问题规模一定时，增加计算资源时的scaling能力。(input 不变，增加core numbers)
+            
+        4) weak scaling（Gustafson’s law，古斯塔夫森定律）:speedup=s + p ∗ N
+                参数意义同3。该定律描述的是在问题规模和计算资源同时增加时的scaling能力。
+                
+                
+                
